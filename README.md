@@ -37,29 +37,35 @@
 
 بعد تنزيل المشروع من GitHub:
 
-```bash
+https://github.com/ali2009abbas-rgb/blogs_db.git
+
 # تثبيت الاعتماديات
+
 composer install
 
 # نسخ ملف البيئة وضبط إعدادات قاعدة البيانات
+
 cp .env.example .env
 
 # توليد مفتاح التطبيق
+
 php artisan key:generate
 
 # إنشاء الجداول مع بيانات تجريبية (Seeder)
+
 php artisan migrate --seed
 
 # إنشاء رابط التخزين للصور
+
 php artisan storage:link
 
 # تثبيت مكتبات الواجهة وبناءها
+
 npm install && npm run build
 
 # تشغيل الخادم المحلي
+
 php artisan serve
-
-
 
 # تم إنشاء حساب أدمن تلقائيًا عبر Seeder:
 
@@ -67,11 +73,12 @@ Email: admin@example.com
 
 Password: password
 
-#  ملف SQL dump باسم:
+# ملف SQL dump باسم:
+
 database/sql_dump.sql
 
-
 # يوجد صورة تجريبية يمكن تغييرها:
+
 storage/app/public/blogs/sample.jpg
 
 #مخطط تدفق الطلبات (Request Flow)
@@ -94,5 +101,7 @@ J -->|نجاح| L[تنفيذ الكود داخل Controller]
 
 L --> M[Model + Database]
 M --> N[استجابة HTTP (Redirect + رسالة نجاح)]
+
+```
 
 ```
