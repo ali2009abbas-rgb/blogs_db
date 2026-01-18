@@ -2,16 +2,23 @@
 A modern, full-featured hotel management platform built with Laravel 12, offering complete control over reservations, rooms, billing, services, and staff operations.
 
 📸 Screenshots
+🌐 Website Screens
 <img width="1893" src="https://github.com/user-attachments/assets/2e7fbecf-4651-427a-bd2a-56f1eb194bd2" />
+
+📊 Dashboard Screens
 <img width="1919" src="https://github.com/user-attachments/assets/6dbd9e7b-53bc-4d9a-b64c-4ece0b96e561" />
 <img width="1901" src="https://github.com/user-attachments/assets/f867a559-836d-4f95-a05e-a9900a2aae97" />
+
+🛎 Management Screens
 <img width="1898" src="https://github.com/user-attachments/assets/930e51ae-9add-4bf7-8cac-2cf541e3aff1" />
 
+📑 Reports Screens
+(لا توجد صور تقارير منفصلة في النسخة الأصلية — تم ترك القسم فارغًا)
+
+🗄 ERD
+<img width="1060" src="https://github.com/user-attachments/assets/dd710e8e-8962-4034-8d21-6f726c5a73d5" />
+
 📚 Table of Contents
-🏨 Vistana Hotel Management System
-
-📸 Screenshots
-
 🚀 Project Overview
 
 👥 Team Members
@@ -20,7 +27,7 @@ A modern, full-featured hotel management platform built with Laravel 12, offerin
 
 🛠 Installation & Setup
 
-🗄 Database Structure (ERD)
+🗄 Database Structure
 
 📚 API Documentation
 
@@ -35,17 +42,17 @@ A modern, full-featured hotel management platform built with Laravel 12, offerin
 🇸🇦 النسخة العربية
 
 🚀 Project Overview
-The Vistana Hotel Management System is a complete hotel operations platform designed to:
+The Vistana Hotel Management System is a comprehensive hotel operations platform designed to:
 
-✅ Manage reservations with a centralized booking system
+Centralize reservations and reduce booking errors
 
-📊 Provide real-time analytics for revenue & occupancy
+Provide real-time analytics for revenue & occupancy
 
-🛏 Manage rooms, room types, and services
+Manage rooms, room types, services, and invoices
 
-🔐 Support multi-role access (Admin, Receptionist, Staff)
+Support multi-role access (Admin, Receptionist, Staff)
 
-🧾 Automate billing, invoices, and customer notifications
+Automate billing and customer notifications
 
 Built with Laravel 12, Flowbite, and Tailwind CSS, the system delivers a modern, responsive, and efficient management experience.
 
@@ -60,8 +67,8 @@ Developer 4	Mais Ahmad
 ⚙️ Requirements
 Component	Version
 PHP	≥ 8.2
-Laravel	12.x
 Composer	Latest
+Laravel	12.x
 Node.js	Latest
 MySQL	8.0+
 🛠 Installation & Setup
@@ -99,47 +106,53 @@ npm run build
 9. Start the Server
 bash
 php artisan serve
-🗄 Database Structure (ERD)
-<img width="1060" src="https://github.com/user-attachments/assets/dd710e8e-8962-4034-8d21-6f726c5a73d5" />
-
-Main Tables
-Users
-
-Rooms & Room Types
-
-Reservations
-
-Services
-
-Invoices
-
-Ratings
-
-Images
-
-Notifications
-
+🗄 Database Structure
+📌 Main Tables
+Table	Description
+Users	إدارة المستخدمين
+Rooms & Room Types	إدارة الغرف وأنواعها
+Reservations	نظام الحجوزات المتكامل
+Services	خدمات الفندق
+Invoices	الفواتير والمدفوعات
+Ratings	تقييمات العملاء
+Images	صور الغرف والخدمات
+Notifications	الإشعارات
 📚 API Documentation
 🔐 Authentication
-Bearer Token (Sanctum)
-
-Content-Type: application/json
-
-Endpoints
-Auth
-
-Room Types
-
-Rooms
-
-Ratings
-
-Reservations
-
-Services
-
-Invoices
-
+Method	Endpoint	Description
+POST	/api/login	User login
+POST	/api/logout	Logout
+POST	/api/register	Register new user
+🏨 Room Types
+Method	Endpoint	Description
+GET	/api/room-types	List room types
+POST	/api/room-types	Create room type
+PUT	/api/room-types/{id}	Update room type
+DELETE	/api/room-types/{id}	Delete room type
+🛏 Rooms
+Method	Endpoint	Description
+GET	/api/rooms	List rooms
+POST	/api/rooms	Create room
+PUT	/api/rooms/{id}	Update room
+DELETE	/api/rooms/{id}	Delete room
+⭐ Ratings
+Method	Endpoint	Description
+GET	/api/ratings	List ratings
+POST	/api/ratings	Add rating
+📅 Reservations
+Method	Endpoint	Description
+GET	/api/reservations	List reservations
+POST	/api/reservations	Create reservation
+PUT	/api/reservations/{id}	Update reservation
+DELETE	/api/reservations/{id}	Cancel reservation
+🛎 Services
+Method	Endpoint	Description
+GET	/api/services	List services
+POST	/api/services	Create service
+🧾 Invoices
+Method	Endpoint	Description
+GET	/api/invoices	List invoices
+POST	/api/invoices	Create invoice
 🔗 Postman Collection
 Collection Link:  
 https://documenter.getpostman.com/view/50368281/2sBXVifovz
@@ -208,48 +221,3 @@ Chart.js
 
 📄 License
 This project is licensed under the MIT License.
-
-🇸🇦 النسخة العربية
-🚀 نظرة عامة على المشروع
-نظام إدارة الفنادق فيستانا هو منصة متكاملة لإدارة عمليات الفنادق، تشمل:
-
-إدارة الحجوزات
-
-إدارة الغرف وأنواعها
-
-الفواتير والمدفوعات
-
-الخدمات
-
-تقييمات العملاء
-
-نظام صلاحيات متعدد المستويات
-
-👥 فريق العمل
-(نفس الجدول أعلاه)
-
-✨ المميزات
-نظام حجوزات متكامل
-
-تقارير وإحصائيات مباشرة
-
-نظام فواتير آلي
-
-إشعارات فورية
-
-مصادقة آمنة
-
-واجهة حديثة وسريعة
-
-🛠 التثبيت
-(نفس خطوات التثبيت أعلاه باللغة العربية)
-
-📚 التوثيق
-توثيق API
-
-روابط Postman
-
-شرح الجداول
-
-🎉 شكر خاص
-مطور بـ ❤️ باستخدام Laravel 12, Flowbite, Sanctum, Spatie, Breeze.
