@@ -1,5 +1,5 @@
 🏨 Vistana Hotel Management System
-A modern, full-featured hotel management platform built with Laravel 12, offering complete control over reservations, rooms, billing, services, and staff operations.
+A modern and comprehensive hotel management platform built with Laravel 12, offering full control over reservations, rooms, billing, services, and staff operations.
 
 📸 Screenshots
 🌐 Website Screens
@@ -13,7 +13,7 @@ A modern, full-featured hotel management platform built with Laravel 12, offerin
 <img width="1898" src="https://github.com/user-attachments/assets/930e51ae-9add-4bf7-8cac-2cf541e3aff1" />
 
 📑 Reports Screens
-(لا توجد صور تقارير منفصلة في النسخة الأصلية — تم ترك القسم فارغًا)
+(No report screenshots available in the original project)
 
 🗄 ERD
 <img width="1060" src="https://github.com/user-attachments/assets/dd710e8e-8962-4034-8d21-6f726c5a73d5" />
@@ -39,10 +39,10 @@ A modern, full-featured hotel management platform built with Laravel 12, offerin
 
 📄 License
 
-🇸🇦 النسخة العربية
+🇸🇦 Arabic Version
 
 🚀 Project Overview
-The Vistana Hotel Management System is a comprehensive hotel operations platform designed to:
+The Vistana Hotel Management System is a full-featured hotel operations platform designed to:
 
 Centralize reservations and reduce booking errors
 
@@ -109,14 +109,14 @@ php artisan serve
 🗄 Database Structure
 📌 Main Tables
 Table	Description
-Users	إدارة المستخدمين
-Rooms & Room Types	إدارة الغرف وأنواعها
-Reservations	نظام الحجوزات المتكامل
-Services	خدمات الفندق
-Invoices	الفواتير والمدفوعات
-Ratings	تقييمات العملاء
-Images	صور الغرف والخدمات
-Notifications	الإشعارات
+Users	User management
+Rooms & Room Types	Room and type management
+Reservations	Full reservation system
+Services	Hotel services
+Invoices	Billing and payments
+Ratings	Customer reviews
+Images	Room and service images
+Notifications	System notifications
 📚 API Documentation
 🔐 Authentication
 Method	Endpoint	Description
